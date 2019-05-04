@@ -1,0 +1,27 @@
+html {
+    background: grey
+
+}
+h1 {
+    font-size: 50px;
+    color: purple
+}
+
+
+#user-add {
+    size: 20px;
+    color: black
+}
+.add-button {
+        display: none;
+        color: black;
+        background-color: greenyellow;
+        border: 2px outset black;
+        border-radius: 2px;
+        padding: 5px 15px;
+        margin: 10px auto;
+    }
+.imgGif {
+ 
+    size: 20px;
+}

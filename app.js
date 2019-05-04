@@ -1,12 +1,12 @@
       // Event listener for all button elements
-      $("button").on("click", function () {
+      $("#giffy").on("click", "button", function () {
         // In this case, the "this" keyword refers to the button that was clicked
         var person = $(this).attr("data-person");
         console.log()
 
         // Constructing a URL to search Giphy for the name of the person who said the quote
         var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=byFNur3jQd9teof1Gw7Izdcr1XjKIBov&q=" + person + 
-        "&limit=3&offset=0&rating=G&lang=en"
+        "&limit=10&offset=0&rating=G&lang=en"
 
         // Performing our AJAX GET request
         $.ajax({
@@ -29,6 +29,22 @@
 
         })
     })
+
+    $("#add-button").on("click", function(event)  {
+      console.log("hello");
+      event.preventDefault();
+      // take text that's in the text box and create new button with that text as it's value. 
+      //The new button should be listed after all the other buttons. 
+
+      var text = $("#inputText").val().trim();
+      var newBtn = $("button").text(text);
+      // var newBtn = $("button").val(text);
+      $("#giffy").append(newBtn);
+      console.log(moment().format('LLLL'));
+      console.log(newBtn)
+    })
+    
+
 // create ajax for the movie button that is being clicked
 
 // creat div to hold the cartoon

@@ -4,35 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Favorite Cartoon</title>
-  <style type="text/css">
-    button,
-    div,
-    form,
-    input {
-      margin: 10px;
-    }
-  </style>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</style>
 </head>
 
-<body>
-  <div class="container">
+<body style = "background: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
+background-size: 100% 100%; ">
 
-    <h1>Cartoon Search</h1>
-
-    <!-- all the buttons created go here -->
+<div class="container">
+  
+  <h1>Cartoon Search</h1>
+  
+  
+  <!-- all the buttons created go here -->
+  <div id="giffy">
+    
     <button data-person="Spongebob Squarepants">
       bring it around town.
     </button>
-    <!-- search buttons -->
-    <!-- Cartoons will show up here  -->
+    <button data-person="Powerpuff Girls">
+      There's nothing wrong with talking to yourself.
+    </button>
+    <button data-person="Hey Arnold!">
+      And if you're a single when all your friends are married, you know, it isn't a problem.
+    </button>
+    <button data-person="Rugrats">
+      Only some of us stay beautiful unless you go and and get elastic perjury.
+    </button>
+    <button data-person="Tom & Jerry">
+      Life is incomplete without enemies.
+    </button>
+    <button data-person="Johnny Bravo">
+      You look pretty...I look pretty...why don't we go home and stare at each other?
+    </button>
+    <button data-person="The Simpsons">
+      But surely you can't put a price on family.
+    </button>
+    <button data-person="Dexter's Laboratory ">
+      I have no friends, and I am totally unpopular. 
+    </button>
+  </div>
+  <!-- search buttons -->
+  <!-- Cartoons will show up here  -->
+  
+  <!-- inital array of cartoons -->
+  
+  <!-- add search button for the viewer here -->
+  
+  <div class="search button">
+    <text id="user-add">Add a cartoon</text>
+    <input data="text" id="inputText"></input>
+    <button id="add-button"> Create Button</button>
+  </div>
+  
+  <div id="gifs-appear-here">
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src=app.js></script>
+</body>
 
-    <!-- inital array of cartoons -->
-
-    <div id="gifs-appear-here">
-      
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src=app.js></script>
-</body >
-</html >
+</html>
