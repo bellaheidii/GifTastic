@@ -16,7 +16,6 @@
             console.log(response.data)
           for (let i = 0; i < response.data.length; i ++) {
               
-          
             var imgLink = response.data[i].images.original.url
             console.log(imgLink)
             var imgTag = $("<img>")
@@ -30,18 +29,19 @@
         })
     })
 
-    $("#add-button").on("click", function(event)  {
+    $("#add-button").on("click", function(event) {
       console.log("hello");
       event.preventDefault();
       // take text that's in the text box and create new button with that text as it's value. 
       //The new button should be listed after all the other buttons. 
 
       var text = $("#inputText").val().trim();
-      var newBtn = $("button").text(text);
+      var newBtn = $("<button>").text(text);
+      newBtn.attr("data-person", text)
       // var newBtn = $("button").val(text);
       $("#giffy").append(newBtn);
-      console.log(moment().format('LLLL'));
-      console.log(newBtn)
+      //console.log(moment().format('LLLL'));
+      console.log(newBtn);
     })
     
 
